@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>assignment1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Assignment1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Assignment1_files/libs/quarto-html/quarto.js"></script>
+<script src="Assignment1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Assignment1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Assignment1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Assignment1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Assignment1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Assignment1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Assignment1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Assignment1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="assignment-1" class="level1">
+<h1>Assignment 1:</h1>
+<section id="on-shmueli-and-breiman---a-comparative-overview" class="level3">
+<h3 class="anchored" data-anchor-id="on-shmueli-and-breiman---a-comparative-overview">On Shmueli and Breiman - A Comparative Overview</h3>
+<p><strong>Author:</strong> Santoshi Rishitha</p>
+<p><strong>Affiliation:</strong> The University of Texas at Dallas</p>
+<hr>
+<blockquote class="blockquote">
+<p>“As Arthur Conan Doyle’s Sherlock Holmes put it in ‘A Scandal in Bohemia’, ‘<em>It is a capital mistake to theorize before one has data</em>.’ - (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-deutsch_beginning_2012">Deutsch 2012, 15</a>)</p>
+</blockquote>
+<p>Statistics, when considered as a branch of reasoning, is occasionally harangued in the everyday world as being a worse base for forming conclusions than proverbial ‘lies, and damned lies’. Of course, the undertone of the sentiment is often to simply convey a gentle reminder about the dishonest (or at least incorrect) use of statistical tools to imply associations that are unsupportable on a sounder basis of application. A dichotomous lesson many first receive in an introductory statistics course while pursuing studies at an institution of higher education. &nbsp;&nbsp;&nbsp;</p>
+<p>Of course, the argument over the soundest basis for the use of statistical tools has a more rarefied pedigree within academia itself. Especially as regards their application in the social sciences. In this data-driven century, which comfortably weaves patterns of information out of the historically unparalleled petabyte range (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-daoud_statistical_2023">Daoud and Dubhashi 2023, 27</a>), what can best be conceptualized as schools of thought have emerged with competing understandings of the proper foundations and appropriate spheres of application of statistical methods (Daoud and Dubhashi, 2023). Two prominent instalments of this debate will be surveyed here. Namely, Leo Breiman’s 2001 article <em>Statistical Modeling: The Two Cultures</em> and Galit Shmueli’s 2010 paper <em>To Explain or to Predict?</em>.</p>
+<p>The issue, as per usual, starts at the beginning: What is the purpose of doing statistics? The answer, according to Breiman, is to contribute to the advancement of science by allowing us to make predictions (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 11–12</a>). He mentions how in the private-sector, the <em>only</em> value of statistical analysis rests on its predictive accuracy (2001, 3-4). In other words, a statistic’s worth lies in the results it actuates. He also observes that, in contrast, <em>academics</em> involved in the pursuit of scientific knowledge typically value statistical tools for their ability to provide an interpretable, causal model of some phenomena under study (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 4–5</a>).<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn1">1</a></sup> Perhaps even ignoring matters of predictive strength (or lack thereof) in favour of “the construction of an ingenious stochastic model.” (2001, 5). &nbsp;</p>
+<p>Now, the epistemological underpinnings that Breiman is alluding to come clearly into the fore in his construal of why different practitioners value different criteria to adjudicate the ends of the scientific enterprise. Breiman sees the differing teleological visions of the two ‘camps’ of practitioners to be essentially conceptual instantiations of the properties of the tools they use to advance each other’s conception of knowledge (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 1</a>). Traditional statistical analysis often involves the use of linear parametric<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn2">2</a></sup> models that are presumed to represent the phenomena that are the origin of the data that is available to study (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 1, 4–5, 6</a>). These models are often chosen independently of the data under consideration and then tested against various goodness-of-fit measures (2001, 4). Breiman expresses credulity that anyone could seriously believe that such limited models, supposedly chosen because of their ease of manipulation and understanding (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 4–6</a>), would necessarily describe much of the complicated nature of reality (2001, 4-5). Here, he attacks the classical presumption of traditional modelling on its own terms. In essence, arguing that even if classical modelling’s focus on finding the ‘real’ nature of data-generating processes (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 1</a>) were the most fruitful goal of scientific inquiry, simple parametric models are not going to get anyone very far.</p>
+<p>Indeed, Breiman believes that classical research has run up against the limits of such methodologies<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn3">3</a></sup> due to the preponderance of larger and more complicated data sets that have become available since the digital age (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 6, 8</a>). Responding to the (traditional statisticians) hammer and (parametrically subsumable) nail analogy, he notes: “The trouble for statisticians is that recently some of the problems have stopped looking like nails.” (2001, 6). He vouches for a range of modern, computationally powerful tools as providing a path forward that he subsumes under the nomenclature of the “Algorithmic Modeling Culture”, AMC, as opposed to consigning traditional academics to a “Data Modeling Culture” or DMC (2001, 1).</p>
+<p><img src="https://tylerjmerrill.github.io/images/bre1.png" class="img-fluid"> Breiman’s idealized model of exploration via AMC (2001, 1).</p>
+<p>Poignantly, Breiman holds that the best models are those that provide the highest predictive accuracy, such as neural nets, random trees (or ‘forests’ composed of them), and support vector algorithms (2001, 9-11). He notes that despite their impenetrability to easy (or any) understanding, such ‘black box’ processes are to be preferred to more traditional (parametric) ones because “The goal is not interpretability, but accurate information.” (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 12</a>). To bring the point home, in response to traditional objections to using such complicated algorithmic tools because they do not lend themselves to interpretability, he notes the “…wrong question is being asked.” (2001, 11)</p>
+<p>In contradistinction, Galit Shmueli focuses not on the merits of DMC or AMC cultures per se but more on the rationale for the different enterprises of predicting new data and explaining currently existing data sets and the resulting impact of an asymmetrical focus on their distinction (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 1, 16</a>). Shmueli organizes his thesis around an axis of bifurcated aspects of modes of ‘doing statistical analysis’: ‘Causation–Association’, ‘Theory–Data’, ‘Retrospective–Prospective’, and ‘Bias–Variance’ (2010, 5). Explanatory modelling and predicative analysis<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn4">4</a></sup> are conceptually situated opposite to each other in every pair of this scheme, in order to reveal their fundamental differences of modality (2010, 5).</p>
+<p>For starters, explanatory modelling is supposed to specify all the relevant variables that are assumed to cause an outcome(s) of interest, as well as undergird the causal pathways as of to <em>how</em> the variables cause those outcome(s) (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 2</a>). He notes that in many disciplines, mere association-based tools<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn5">5</a></sup> such as regression analysis are used on data for “testing causal hypotheses about theoretical constructs” (2010, 2-3). Meaning that ‘extra-modelled’ inferences must buttress the theory.<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn6">6</a></sup> Therefore, following his axis paradigm in explanatory modeling (2010, 5):</p>
+<p>1) Causation channels are supposed to be captured by some sort of statistical model from which to draw conclusions of ontological significance (an act of inference)</p>
+<p>2) This model is often constructed with theoretical considerations in mind</p>
+<p>3) The focus is on data that already exists and</p>
+<p>4) It focuses on minimizing bias in order to properly undercover the magnitude of various variables.</p>
+<p>The intrinsic value of such an approach is, therefore, assumed to lie in its ability to cohere data into a story the human mind can appreciate. As theoretical physicist David Deutsch remarks in the conclusion to the quote that opened this article:&nbsp;</p>
+<blockquote class="blockquote">
+<p>“But that was itself a capital mistake. We never know any data before interpreting it through theories.” - (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-deutsch_beginning_2012">Deutsch 2012, 15</a>)</p>
+</blockquote>
+<p><em>Predictive</em> modelling, on the other hand, via the same axis is (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 5, 11</a>):</p>
+<p>1) Concerned primarily with associations, whatever their real underlying relationship</p>
+<p>2) Estimates a model drawn from the data and not independently from it</p>
+<p>3) Is focused on future, currently non-existent data and</p>
+<p>4) Is willing to incur bias if need be in order to improve estimation.</p>
+<p>In concurrence with Breiman, Shmueli mentions that predictive modelling is able to take advantage of a “…range of plausible methods [<em>that</em>]<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn7">7</a></sup> includes not only statistical models (interpretable and uninterpretable) but also data mining algorithms.” (2010, 10). Even if those algorithms “… are considered ill-suited for explanatory modeling.” (2010, 10). &nbsp;</p>
+<p>Where Shmueli shines a spotlight, however, concerns the fact that an explicit recognition of the distinction in conditions required for the different types of analysis has not always been appreciated in the literature (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 6, 16</a>). A state of affairs that has led to an arguable loss to scientific progress, not only due to matters of epistemological rectitude but because the contributions that algorithmic/predictive modelling could make to explanatory modelling has gone underappreciated (2010, 16-18). Shmueli pleads that “by producing high-accuracy price predictions they shed light on new potential variables that are related to…the types of relationships that can be further investigated in terms of causality.” (2010, 16). In contrast to Breiman’s championing of AMC over DMC practices (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-breiman_statistical_2001">Breiman 2001, 16</a>), Shmueli sees a role for the ‘two cultures’ to work together - although, to reiterate, he is also convinced that traditional statistical practice has harmed itself by not more proactively embracing the new tools provided by predictive algorithms (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 16</a>).</p>
+<p>In the conciliatory respect, Shmueli has company with Adel Daoud and Devdatt Dubhashi, whose article <em>Statistical Modeling: The Three Cultures</em> acts as a partial rejoinder to Breiman’s and advocates a path not dissimilar to that Shmueli does. They argue that Breiman does not provide an argument as of to why predication advances scientific progress (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-daoud_statistical_2023">Daoud and Dubhashi 2023, 30</a>) and aim to provide their own counterargument that ends up aligning with some of the aforementioned positions staked out by Shmueli (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 18–22, 24–27, 32</a>). Daoud and Dubhashi argue that rather than best considered as antagonists to explanatory frameworks at the other end of a hostile spectrum,<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn8">8</a></sup> that the methods of algorithmic learning models have developed a synergetic coupling with explanatory modelling among some researchers (2023, 17). This has led to the formation of what they term a hybrid modelling culture, or HMC (2023, 3, 5, 17). &nbsp;</p>
+<p>They reason this culture has flourished because it can offer a new alley-way for traditional causal frameworks<sup><a href="https://tylerjmerrill.github.io/assignment1.html#fn9">9</a></sup> to expand the range of potential pathways that can be brought into their service via machine-learning/prediction algorithms (2023, 5, 33-34). While they point out that isolated approaches of either vein are useful for certain problems (2023, 16, 27, 32), and HMC type approaches come with their own potential problems (34), they believe that the most lucrative direction for the applied social sciences lies in utilizing the strength of algorithmic modelling to better complement the goal usually left to more traditional statistical inference (35). &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>Traditional inference concerns such as endogeneity (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-shmueli_explain_2010">Shmueli 2010, 9–10</a>) and the struggle to ‘operationalize’ estimators of population parameters (2010, 2, 14-15, 19) will likely still occupy researchers time even if adoption of learning-based algorithms becomes widespread. However, it seems fair to concede that problems related to systemic errors (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-daoud_statistical_2023">Daoud and Dubhashi 2023, 27–18</a>) on the scales only possible to encounter with ever larger data sets will probably be better solved by aiding the ‘mind’s eye’ with a large number of relatively blind but perhaps further seeing algorithmic ones.</p>
+<p>Looking towards an ever more data-rich world and very a human desire to understand it, let us hope the words of one researcher are heeded:</p>
+<blockquote class="blockquote">
+<p>“Ignorance is inevitable; let’s make it not quite so painful.” - (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-huntington-klein_2022">Huntington-Klein 2022, 162</a>)</p>
+</blockquote>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references"><strong>References</strong></h2>
+<p>Breiman, Leo. 2001. “Statistical Modeling: The Two Cultures (with Comments and a Rejoinder by the Author).” <em>Statistical Science</em> 16(3). <a href="https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full" class="uri">https://projecteuclid.org/journals/statistical-science/volume-16/issue-3/Statistical-Modeling--The-Two-Cultures-with-comments-and-a/10.1214/ss/1009213726.full</a> (January 29, 2024).</p>
+<p>Daoud, Adel, and Devdatt Dubhashi. 2023. “Statistical Modeling: The Three Cultures.” <em>Harvard Data Science Review</em> 5(1). <a href="https://hdsr.mitpress.mit.edu/pub/uo4hjcx6/release/1" class="uri">https://hdsr.mitpress.mit.edu/pub/uo4hjcx6/release/1</a> (January 29, 2024).</p>
+<p>Deutsch, David. 2012. <em>The Beginning of Infinity: Explanations That Transform the World</em>. New York: Penguin Books.</p>
+<p>Hoskin, Tanya. “Parametric and Nonparametric: Demystifying the Terms.” <a href="https://www.mayo.edu/research/documents/parametric-and-nonparametric-demystifying-the-terms/doc-20408960" class="uri">https://www.mayo.edu/research/documents/parametric-and-nonparametric-demystifying-the-terms/doc-20408960</a>.</p>
+<p>Hume, David, Eric Steinberg, David Hume, and David Hume. 1993. <em>An Enquiry Concerning Human Understanding ; [with] A Letter from a Gentleman to His Friend in Edinburgh ; [and] An Abstract of a Treatise of Human Nature</em>. 2nd ed.&nbsp;Indianapolis: Hackett Pub. Co.</p>
+<p>Huntington-Klein, Nick. 2022. <em>The Effect: An Introduction to Research Design and Causality</em>. Boca Raton: CRC Press, Taylor &amp; Francis Group.</p>
+<p>Shmueli, Galit. 2010. “To Explain or to Predict?” <em>Statistical Science</em> 25(3). <a href="https://projecteuclid.org/journals/statistical-science/volume-25/issue-3/To-Explain-or-to-Predict/10.1214/10-STS330.full" class="uri">https://projecteuclid.org/journals/statistical-science/volume-25/issue-3/To-Explain-or-to-Predict/10.1214/10-STS330.full</a> (January 29, 2024).</p>
+</section>
+<section id="footnotes" class="level2">
+<h2 class="anchored" data-anchor-id="footnotes"><strong>Footnotes</strong></h2>
+<ol type="1">
+<li><p>As well as because truly verifiable, measurable, randomized introductions of exogenous variables (experiments) are hard to come by ‘in the wild’, especially in the social sciences (see footnote 6), and causal perturbation effects need to be identified by accounting (‘controlling’) for possible missing/hidden variables (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-huntington-klein_2022">Huntington-Klein 2022</a>, ch.&nbsp;4, 8-11, passim). A task that can therefore be aided considerably <em>if</em> it can be assumed the underlying relationships are described by a well-defined parametric model.<a href="https://tylerjmerrill.github.io/assignment1.html#fnref1">↩︎</a></p></li>
+<li><p>Essentially, a model whose structure is presumed in advance, hence making for a more simplified grasp of reality (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-hoskin_parametric_nodate">Hoskin n.d.</a>).<a href="https://tylerjmerrill.github.io/assignment1.html#fnref2">↩︎</a></p></li>
+<li><p>These limits are arguably always there anyway, in a sense that has been recognized for centuries: “But philosophers, who carry their scrutiny a little farther, immediately perceive, that, even in the most familiar events, the energy of the cause is as unintelligible as in the most unusual, and that we only learn by experience the frequent CONJUNCTION of objects, without being ever able to comprehend any thing like CONNEXION between them.” - (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-hume_enquiry_1993">Hume et al.&nbsp;1993, 52</a>)<a href="https://tylerjmerrill.github.io/assignment1.html#fnref3">↩︎</a></p></li>
+<li><p>He also focuses on purely descriptive analysis, see (2010, 3).<a href="https://tylerjmerrill.github.io/assignment1.html#fnref4">↩︎</a></p></li>
+<li><p>“Whereas “proper” statistical methodology for testing causality exists, such as designed experiments or specialized causal inference methods for observational data…” (2010, 3).<a href="https://tylerjmerrill.github.io/assignment1.html#fnref5">↩︎</a></p></li>
+<li><p>“In complex situations—and most social science is about highly complex situations—we may well not know very much about what the causal…looks like.” - (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-huntington-klein_2022">Huntington-Klein 2022, 161</a>)<a href="https://tylerjmerrill.github.io/assignment1.html#fnref6">↩︎</a></p></li>
+<li><p>Italics mine.<a href="https://tylerjmerrill.github.io/assignment1.html#fnref7">↩︎</a></p></li>
+<li><p>It is important to note that Shmueli also sees the antagonism as fairly historic in nature and views the two approaches as more of a set of potentially complimentary dimensions (2010, 17).<a href="https://tylerjmerrill.github.io/assignment1.html#fnref8">↩︎</a></p></li>
+<li><p>They take the ‘hypothetico-deductive’ method as the central one (<a href="https://tylerjmerrill.github.io/assignment1.html#ref-daoud_statistical_2023">Daoud and Dubhashi 2023, 5</a>)<a href="https://tylerjmerrill.github.io/assignment1.html#fnref9">↩︎</a></p></li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
